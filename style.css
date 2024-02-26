@@ -1,0 +1,50 @@
+:root {
+  --body-color: #efefef;
+}
+.dark-theme {
+  --body-color: #0a0a0a;
+  --bg-color: #fff;
+}
+body {
+  background: var(--body-color);
+  transition: background 0.3s;
+}
+
+.container {
+  margin: 50px auto;
+  width: 110px;
+  height: 60px;
+  background-color: #222;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+i.fa-solid {
+  font-size: 30px;
+  color: yellow;
+  padding: 10px;
+}
+.dark-btn {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.5s, background-color 0.5s, margin-left 0.7s;
+  display: inline-block;
+}
+
+.dark-btn.dark-btn-on {
+  margin-left: 60px;
+}
+.heading {
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  color: var(--bg-color);
+}
